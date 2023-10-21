@@ -6,8 +6,10 @@ import br.edu.ifpi.poo.notificacoes.Notificacao;
 // Uma classe abstrata não pode ser instanciada, ou seja,
 // ela não permite criar objetos diretamente usando new.
 public abstract class Conta {
-    // atributo privado, só pode ser acessado/manipulado dentro desta classe.
-    private String numero;
+
+    // atributo 'private', só pode ser acessado/manipulado dentro desta classe.
+    // atributo 'final' indica que ele é uma constante, que não pode ser modificado após a criação do objeto
+    private final String numero;
     // atributo definido com 'protected', com isso ele é visível nesta classe e classes filhas
     protected double saldo;
     // atributo privado, só pode ser acessado/manipulado dentro desta classe.
