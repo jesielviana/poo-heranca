@@ -17,7 +17,7 @@ public class ContaPoupanca extends Conta{
     }
 
     @Override
-    public void transferencia(double valor, Conta destino) {
+    public void transfere(double valor, Conta destino) {
     // implementar o comportamento da transferencia de ContaPoupanca aqui
     }
 }

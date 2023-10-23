@@ -30,7 +30,7 @@ public abstract class Conta {
 
     // método abstrato, definidocom abstract, com essa definição obriga que todas
     // as subclasses desta classe sobscreva/implementem este método.
-    public abstract void transferencia(double valor, Conta destino);
+    public abstract void transfere(double valor, Conta destino);
 
     public double getSaldo() {
         return saldo;

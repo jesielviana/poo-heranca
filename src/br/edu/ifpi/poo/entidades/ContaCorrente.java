@@ -21,7 +21,7 @@ public class ContaCorrente extends Conta{
      * sobscrever (definir uma implementação) este método.
      */
     @Override
-    public void transferencia(double valor, Conta destino) {
-
+    public void transfere(double valor, Conta destino) {
+        // implementar o comportamento da transferencia de ContaCorrente aqui
     }
 }

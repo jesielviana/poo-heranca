@@ -14,11 +14,13 @@ public class Main {
         Conta contaCorrente = new ContaCorrente("1", 100, new NotificacaoEmail());
         Conta contaPoupanca = new ContaPoupanca("2", 100, new NotificacaoSMS());
 
+        contas.add(contaCorrente);
+        contas.add(contaPoupanca);
+
         contaPoupanca.saque(10);
         contaCorrente.saque(10);
 
-        contas.add(contaCorrente);
-        contas.add(contaPoupanca);
+        contaCorrente.transfere(10, contaPoupanca);
 
         for (Conta c: contas) {
             System.out.println("Conta "+ c.getNumero() + " - Saldo: "+ c.getSaldo());
